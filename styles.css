@@ -1,0 +1,227 @@
+/* -- GLOBAL --*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+    height: 100%;
+}
+
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 10px;
+    padding: 5px;
+}
+
+/* -- HEADER --*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: 20px;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-size: 1.25rem;
+    margin-right: 20px;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+@media (max-width: 600px) {
+    
+     .navbar-links {
+        display: flex;
+        width: 100%;
+     }
+
+     .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+     }
+
+     .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+     }
+
+     .navbar-links li {
+         text-align: left;
+     }
+
+     .navbar-links li a {
+         padding: .5rem 1rem;
+     }
+
+     .navbar-links.active {
+         display: flex;
+     }
+}
+
+/* -- BANNER --*/
+
+.main {
+    padding-top:,;
+    opacity: ;
+}
+
+.mission {
+    display: flex;
+    height: 600px;
+    background-image: url('./Images/banner_img.jpg');
+    opacity: 0.9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+  
+.mission .content {
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    opacity: 0.9;
+    text-align: center;
+    height: 150px;
+}
+
+.content {
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    padding-top: 15px;
+}
+
+/* -- PORTFOLIO --*/
+
+#portfolio {
+    min-height: 500px;
+    margin: auto;
+    padding-top: 70px;
+    text-align: center;
+}
+
+
+#portfolio h3 {
+    padding-top: 20px;
+}
+
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.company img {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 300px;
+    padding: 20px;
+}
+
+.caption {
+    min-width: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* -- TEAM --*/
+
+#team-container {
+    margin: auto;
+    padding-top: 70px;
+    text-align: center;
+}
+
+#team-container h2 {
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    margin-bottom: 30px;
+}
+
+.team {
+    background-image: url('./Images/teambackground-img.jpg');
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.teammate {
+    padding: 10px;
+    color: white;
+    flex-basis: 280px;
+}
+
+.teammate img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+}
+
+.teammate,
+h3,
+p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* -- CONTACT --*/
+
+.contact,
+.copyright {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.copyright {
+    padding-bottom: 20px;
+}
